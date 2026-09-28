@@ -1,0 +1,2258 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Faso Industries | Barbelés, Grillages & Clôtures au Burkina Faso</title>
+
+    <meta name="description"
+          content="Faso Industries - Fabrication, vente et installation de barbelés, grillages et clôtures à Ouagadougou et partout au Burkina Faso. Demandez votre devis.">
+
+    <meta name="keywords"
+          content="barbelé Burkina Faso, barbelés Ouagadougou, grillage Burkina Faso, clôture Ouagadougou, fabrication barbelé, vente barbelé">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f5f6f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        :root {
+            --green: #0b5d1e;
+            --green-dark: #063b14;
+            --green-light: #198754;
+            --gold: #f5a623;
+            --gold-dark: #d88900;
+            --black: #111111;
+            --white: #ffffff;
+            --gray: #666;
+            --light: #f5f6f7;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.97);
+            box-shadow: 0 3px 20px rgba(0,0,0,0.10);
+            z-index: 9999;
+        }
+
+        .navbar {
+            width: 90%;
+            max-width: 1250px;
+            margin: auto;
+            height: 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--green);
+            color: white;
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .logo-text strong {
+            display: block;
+            color: var(--green);
+            font-size: 21px;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .logo-text span {
+            color: #777;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        nav ul li a {
+            color: #222;
+            font-weight: 500;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--green);
+        }
+
+        .nav-button {
+            background: var(--green);
+            color: white !important;
+            padding: 12px 20px;
+            border-radius: 30px;
+        }
+
+        .nav-button:hover {
+            background: var(--gold);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.62),
+                    rgba(0,0,0,0.70)
+                ),
+                url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2000&q=90");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+
+            padding: 120px 5% 80px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            color: white;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(245,166,35,0.95);
+            color: #111;
+            padding: 9px 18px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 78px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 720px;
+            color: #eee;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 28px;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: #111;
+        }
+
+        .btn-primary:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #111;
+        }
+
+
+        /* =====================================================
+           STATS
+        ===================================================== */
+
+        .stats {
+            background: var(--green);
+            color: white;
+        }
+
+        .stats-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .stat {
+            text-align: center;
+            padding: 28px 15px;
+            border-right: 1px solid rgba(255,255,255,0.20);
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 30px;
+            color: var(--gold);
+        }
+
+        .stat span {
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           GENERAL SECTION
+        ===================================================== */
+
+        section {
+            padding: 95px 5%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 55px;
+        }
+
+        .section-header small {
+            color: var(--gold-dark);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-header h2 {
+            color: var(--green);
+            font-size: clamp(32px, 5vw, 45px);
+            margin: 10px 0 15px;
+        }
+
+        .section-header p {
+            color: var(--gray);
+        }
+
+
+        /* =====================================================
+           PRODUITS
+        ===================================================== */
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            transition: 0.35s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.08);
+        }
+
+        .product-content {
+            padding: 25px;
+        }
+
+        .product-content h3 {
+            color: var(--green);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product-content p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .product-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--green);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           POURQUOI NOUS
+        ===================================================== */
+
+        .why {
+            background: #edf2ee;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .why-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .why-content h2 {
+            color: var(--green);
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .why-content > p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .features {
+            display: grid;
+            gap: 18px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 15px;
+            background: white;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        .feature-icon {
+            min-width: 45px;
+            height: 45px;
+            background: #e7f3e9;
+            color: var(--green);
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 20px;
+        }
+
+        .feature h3 {
+            font-size: 16px;
+            color: #222;
+        }
+
+        .feature p {
+            color: #777;
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           SERVICES
+        ===================================================== */
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service {
+            background: white;
+            padding: 35px 28px;
+            border-radius: 15px;
+            text-align: center;
+            border-bottom: 4px solid var(--green);
+            box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+        }
+
+        .service-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            color: var(--green);
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: #666;
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           GALERIE
+        ===================================================== */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .gallery-item {
+            height: 270px;
+            overflow: hidden;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            padding: 18px;
+
+            background: linear-gradient(
+                transparent,
+                rgba(0,0,0,0.8)
+            );
+
+            color: white;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           A PROPOS
+        ===================================================== */
+
+        .about {
+            background: var(--green-dark);
+            color: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #ddd;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        .about-box {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .about-box h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+
+        /* =====================================================
+           DEVIS
+        ===================================================== */
+
+        .quote {
+            background:
+                linear-gradient(
+                    rgba(11,93,30,0.93),
+                    rgba(6,59,20,0.96)
+                ),
+                url("https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .quote h2 {
+            font-size: clamp(32px, 5vw, 50px);
+            margin-bottom: 15px;
+        }
+
+        .quote p {
+            max-width: 750px;
+            margin: 0 auto 30px;
+            color: #ddd;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+        }
+
+        .contact-info h3 {
+            color: var(--green);
+            margin-bottom: 25px;
+            font-size: 25px;
+        }
+
+        .contact-line {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .contact-line-icon {
+            width: 45px;
+            height: 45px;
+            min-width: 45px;
+            background: #e9f5eb;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-line strong {
+            display: block;
+            color: #222;
+        }
+
+        .contact-line span {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+        }
+
+        .contact-form h3 {
+            color: var(--green);
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            font-family: inherit;
+            outline: none;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--green);
+        }
+
+        .submit-button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 15px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #0b0b0b;
+            color: white;
+            padding: 55px 5% 25px;
+        }
+
+        .footer-grid {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+        }
+
+        .footer-brand h2 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: #aaa;
+            max-width: 450px;
+            font-size: 14px;
+        }
+
+        footer h3 {
+            margin-bottom: 18px;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer ul li a {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        footer ul li a:hover {
+            color: var(--gold);
+        }
+
+        .copyright {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #292929;
+            text-align: center;
+            color: #777;
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           WHATSAPP
+        ===================================================== */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+
+            width: 62px;
+            height: 62px;
+
+            background: #25D366;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 31px;
+
+            box-shadow: 0 7px 25px rgba(0,0,0,0.25);
+
+            z-index: 9999;
+
+            transition: 0.3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+
+        /* =====================================================
+           MOBILE MENU
+        ===================================================== */
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--green);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:1000px){
+
+            .products {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .services {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .stat:nth-child(2) {
+                border-right: none;
+            }
+
+            .why-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media(max-width:750px){
+
+            .navbar {
+                height: 70px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+
+                width: 100%;
+
+                background: white;
+
+                flex-direction: column;
+                gap: 0;
+
+                max-height: 0;
+                overflow: hidden;
+
+                transition: 0.4s;
+            }
+
+            nav ul.active {
+                max-height: 500px;
+                padding: 15px 0;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 12px;
+            }
+
+            .nav-button {
+                display: inline-block !important;
+                margin-top: 5px;
+            }
+
+            .hero {
+                min-height: 90vh;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .products,
+            .services,
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stat {
+                border-bottom: 1px solid rgba(255,255,255,0.20);
+            }
+
+            .stat:nth-child(odd) {
+                border-right: 1px solid rgba(255,255,255,0.20);
+            }
+
+            .why-image img {
+                height: 350px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 5%;
+            }
+        }
+
+
+        @media(max-width:450px){
+
+            .logo-text strong {
+                font-size: 17px;
+            }
+
+            .logo-text span {
+                font-size: 9px;
+            }
+
+            .logo-icon {
+                width: 42px;
+                height: 42px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .stat {
+                border-right: none !important;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <div class="navbar">
+
+        <a href="#accueil" class="logo">
+
+            <div class="logo-icon">
+                FB
+            </div>
+
+            <div class="logo-text">
+                <strong>FASO INDUSTRIES</strong>
+                <span>Industrie & Clôtures</span>
+            </div>
+
+        </a>
+
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+
+        <nav>
+
+            <ul id="menu">
+
+                <li>
+                    <a href="#accueil">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="#produits">Produits</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#realisations">Réalisations</a>
+                </li>
+
+                <li>
+                    <a href="#apropos">À propos</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#devis" class="nav-button">
+                        Demander un devis
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="accueil">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            🇧🇫 FABRICATION & SOLUTIONS DE CLÔTURE
+        </span>
+
+        <h1>
+            La protection commence
+            <span>par une bonne clôture.</span>
+        </h1>
+
+        <p>
+            Fabrication, vente et installation de barbelés,
+            grillages et solutions de clôture robustes pour
+            maisons, fermes, entreprises, exploitations agricoles
+            et sites professionnels au Burkina Faso.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#produits" class="btn btn-primary">
+                Découvrir nos produits
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+                Nous contacter
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STATISTIQUES
+===================================================== -->
+
+<div class="stats">
+
+    <div class="stats-container">
+
+        <div class="stat">
+            <strong>100%</strong>
+            <span>Solutions adaptées</span>
+        </div>
+
+        <div class="stat">
+            <strong>24/7</strong>
+            <span>Service client</span>
+        </div>
+
+        <div class="stat">
+            <strong>BF</strong>
+            <span>Entreprise burkinabè</span>
+        </div>
+
+        <div class="stat">
+            <strong>Pro</strong>
+            <span>Installation professionnelle</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     PRODUITS
+===================================================== -->
+
+<section id="produits">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <small>Nos produits</small>
+
+            <h2>
+                Des solutions de clôture robustes
+            </h2>
+
+            <p>
+                Nous proposons différentes solutions adaptées
+                aux besoins des particuliers, agriculteurs,
+                entreprises et professionnels.
+            </p>
+
+        </div>
+
+
+        <div class="products">
+
+
+            <!-- BARBELE -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="A.jpeg"
+                        alt="Barbelé métallique">
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Barbelés
+                    </h3>
+
+                    <p>
+                        Barbelés destinés à renforcer la sécurité
+                        des terrains, propriétés, fermes et sites
+                        professionnels.
+                    </p>
+
+                    <a href="#devis" class="product-link">
+                        Demander un devis →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- GRILLAGE -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="b.jpeg"
+                        alt="Grillage métallique">
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Grillages
+                    </h3>
+
+                    <p>
+                        Grillages métalliques pour terrains,
+                        jardins, exploitations agricoles et
+                        espaces professionnels.
+                    </p>
+
+                    <a href="#devis" class="product-link">
+                        Demander un devis →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLOTURES -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="c.jpeg"
+                        alt="Clôture">
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Clôtures
+                    </h3>
+
+                    <p>
+                        Solutions de clôture adaptées aux maisons,
+                        entreprises, fermes, entrepôts et terrains.
+                    </p>
+
+                    <a href="#devis" class="product-link">
+                        Demander un devis →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCESSOIRES -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="d.jpeg"
+                        alt="Matériel de construction">
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>
+                        Accessoires
+                    </h3>
+
+                    <p>
+                        Poteaux, fils, attaches et accessoires
+                        nécessaires à la réalisation de vos
+                        clôtures.
+                    </p>
+
+                    <a href="#devis" class="product-link">
+                        Demander un devis →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     POURQUOI NOUS
+===================================================== -->
+
+<section class="why">
+
+    <div class="container">
+
+        <div class="why-grid">
+
+
+            <div class="why-image">
+
+                <img
+                    src="d.jpeg"
+                    alt="Travaux industriels">
+
+            </div>
+
+
+            <div class="why-content">
+
+                <h2>
+                    Pourquoi choisir Faso Industries ?
+                </h2>
+
+                <p>
+                    Notre objectif est de fournir des solutions
+                    de clôture solides, durables et adaptées aux
+                    réalités du Burkina Faso.
+                </p>
+
+
+                <div class="features">
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Produits robustes
+                            </h3>
+
+                            <p>
+                                Des matériaux sélectionnés pour
+                                résister aux conditions d'utilisation
+                                exigeantes.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Solutions sur mesure
+                            </h3>
+
+                            <p>
+                                Nous adaptons nos solutions aux
+                                dimensions et besoins de votre terrain.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Installation professionnelle
+                            </h3>
+
+                            <p>
+                                Une équipe peut vous accompagner
+                                pour la pose et la mise en place.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Service au Burkina Faso
+                            </h3>
+
+                            <p>
+                                Une entreprise pensée pour répondre
+                                aux besoins du marché burkinabè.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <small>Nos services</small>
+
+            <h2>
+                Une solution complète
+            </h2>
+
+            <p>
+                De la fourniture des matériaux à l'installation,
+                nous vous accompagnons dans votre projet.
+            </p>
+
+        </div>
+
+
+        <div class="services">
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🏭
+                </div>
+
+                <h3>
+                    Fabrication
+                </h3>
+
+                <p>
+                    Production et préparation de solutions
+                    de barbelage et de clôture.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🛒
+                </div>
+
+                <h3>
+                    Vente
+                </h3>
+
+                <p>
+                    Vente de barbelés, grillages, poteaux
+                    et accessoires.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    👷
+                </div>
+
+                <h3>
+                    Installation
+                </h3>
+
+                <p>
+                    Accompagnement et installation de vos
+                    solutions de clôture.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🌾
+                </div>
+
+                <h3>
+                    Exploitations agricoles
+                </h3>
+
+                <p>
+                    Solutions pour sécuriser champs,
+                    fermes et élevages.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🏢
+                </div>
+
+                <h3>
+                    Entreprises
+                </h3>
+
+                <p>
+                    Protection des locaux, entrepôts,
+                    chantiers et sites professionnels.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🏠
+                </div>
+
+                <h3>
+                    Particuliers
+                </h3>
+
+                <p>
+                    Clôtures adaptées aux maisons,
+                    terrains et propriétés privées.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     REALISATIONS
+===================================================== -->
+
+<section id="realisations">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <small>Nos réalisations</small>
+
+            <h2>
+                Quelques exemples
+            </h2>
+
+            <p>
+                Découvrez quelques exemples de travaux et
+                solutions de clôture.
+            </p>
+
+        </div>
+
+
+        <div class="gallery">
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="e.jpeg"
+                    alt="Installation de clôture">
+
+                <div class="gallery-caption">
+                    Installation de clôture
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="f.jpeg"
+                    alt="Travaux industriels">
+
+                <div class="gallery-caption">
+                    Projet professionnel
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="m.jpeg"
+                    alt="Travail métallique">
+
+                <div class="gallery-caption">
+                    Travail métallique
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="l.jpeg"
+                    alt="Clôture de terrain">
+
+                <div class="gallery-caption">
+                    Sécurisation de terrain
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="k.jpeg"
+                    alt="Chantier">
+
+                <div class="gallery-caption">
+                    Chantier professionnel
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="i.jpeg"
+                    alt="Grillage">
+
+                <div class="gallery-caption">
+                    Solutions de grillage
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     A PROPOS
+===================================================== -->
+
+<section class="about" id="apropos">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+
+            <div>
+
+                <h2>
+                    Une entreprise tournée vers la sécurité
+                </h2>
+
+                <p>
+                    Faso Industries est une entreprise spécialisée
+                    dans les solutions de protection et de clôture.
+                </p>
+
+                <p>
+                    Nous proposons des barbelés, grillages,
+                    clôtures et accessoires destinés aux particuliers,
+                    exploitations agricoles, entreprises et sites
+                    professionnels.
+                </p>
+
+                <p>
+                    Notre ambition est de développer une activité
+                    industrielle capable de répondre progressivement
+                    aux besoins du marché burkinabè.
+                </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <h3>
+                    🇧🇫 Notre vision
+                </h3>
+
+                <p>
+                    Développer une entreprise burkinabè spécialisée
+                    dans les solutions de clôture et contribuer à
+                    la disponibilité de produits de qualité sur le
+                    marché local.
+                </p>
+
+                <h3>
+                    Notre engagement
+                </h3>
+
+                <p>
+                    Qualité, sérieux, proximité et accompagnement
+                    de nos clients dans leurs projets.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DEVIS
+===================================================== -->
+
+<section class="quote" id="devis">
+
+    <div class="container">
+
+        <h2>
+            Vous avez un projet de clôture ?
+        </h2>
+
+        <p>
+            Donnez-nous les dimensions approximatives de votre
+            terrain et expliquez-nous votre besoin. Nous pourrons
+            vous orienter vers une solution adaptée.
+        </p>
+
+        <a
+            href="g.jpeg"
+            target="_blank"
+            class="btn btn-primary">
+
+            📱 Demander un devis WhatsApp
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <small>Contact</small>
+
+            <h2>
+                Parlons de votre projet
+            </h2>
+
+            <p>
+                Contactez-nous pour obtenir des informations
+                sur nos produits et services.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-info">
+
+                <h3>
+                    Nos coordonnées
+                </h3>
+
+
+                <div class="contact-line">
+
+                    <div class="contact-line-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Adresse
+                        </strong>
+
+                        <span>
+                            Ouagadougou, Burkina Faso
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-line">
+
+                    <div class="contact-line-icon">
+                        📞
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Téléphone
+                        </strong>
+
+                        <span>
+                            +226 63 03 03 52
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-line">
+
+                    <div class="contact-line-icon">
+                        📱
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            WhatsApp
+                        </strong>
+
+                        <span>
+                            +226 63 03 03 52
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-line">
+
+                    <div class="contact-line-icon">
+                        ✉️
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            E-mail
+                        </strong>
+
+                        <span>
+                            contact@fasobarbelés.com
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FORMULAIRE -->
+
+            <div class="contact-form">
+
+                <h3>
+                    Demander un devis
+                </h3>
+
+                <form
+                    onsubmit="sendWhatsApp(event)">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Votre nom
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nom"
+                            placeholder="Ex : Jean Ouédraogo"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Téléphone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telephone"
+                            placeholder="+226 ..."
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Votre besoin
+                        </label>
+
+                        <select id="produit" required>
+
+                            <option value="">
+                                Sélectionner
+                            </option>
+
+                            <option>
+                                Barbelés
+                            </option>
+
+                            <option>
+                                Grillage
+                            </option>
+
+                            <option>
+                                Clôture
+                            </option>
+
+                            <option>
+                                Installation
+                            </option>
+
+                            <option>
+                                Autre
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Votre message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Indiquez par exemple la longueur du terrain, le type de clôture souhaité..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary submit-button">
+
+                        📱 Envoyer la demande sur WhatsApp
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+            <h2>
+                FASO INDUSTRIES
+            </h2>
+
+            <p>
+                Solutions de barbelés, grillages et clôtures
+                pour les particuliers, agriculteurs,
+                entreprises et professionnels au Burkina Faso.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Navigation
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#accueil">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#produits">
+                        Produits
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#services">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#realisations">
+                        Réalisations
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contact
+            </h3>
+
+            <ul>
+
+                <li>
+                    📍 Ouagadougou
+                </li>
+
+                <li>
+                    📞 +226 63 03 03 52
+                </li>
+
+                <li>
+                    🇧🇫 Burkina Faso
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Faso Industrie — Tous droits réservés.
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTTANT
+===================================================== -->
+
+<a
+    href="https://wa.me/22663030352?text=Bonjour%20Faso%20Barbel%C3%A9s%2C%20je%20souhaite%20avoir%20des%20informations."
+    target="_blank"
+    class="whatsapp"
+    aria-label="Contacter Faso Industries sur WhatsApp">
+
+    ☎
+
+</a>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    /* ================================
+       MENU MOBILE
+    ================================= */
+
+    function toggleMenu() {
+
+        const menu = document.getElementById("menu");
+
+        menu.classList.toggle("active");
+
+    }
+
+
+    /* ================================
+       FERMER LE MENU APRES CLIC
+    ================================= */
+
+    document.querySelectorAll("#menu a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document
+                .getElementById("menu")
+                .classList.remove("active");
+
+        });
+
+    });
+
+
+    /* ================================
+       FORMULAIRE WHATSAPP
+    ================================= */
+
+    function sendWhatsApp(event) {
+
+        event.preventDefault();
+
+        const nom =
+            document.getElementById("nom").value;
+
+        const telephone =
+            document.getElementById("telephone").value;
+
+        const produit =
+            document.getElementById("produit").value;
+
+        const message =
+            document.getElementById("message").value;
+
+
+        const texte =
+
+            "Bonjour Faso Industries,%0A%0A" +
+
+            "Je souhaite demander un devis.%0A%0A" +
+
+            "Nom : " + nom + "%0A" +
+
+            "Téléphone : " + telephone + "%0A" +
+
+            "Besoin : " + produit + "%0A%0A" +
+
+            "Message : " + message;
+
+
+        const numero = "22663030352";
+
+
+        const url =
+            "https://wa.me/" +
+            numero +
+            "?text=" +
+            texte;
+
+
+        window.open(url, "_blank");
+
+    }
+
+</script>
+
+
+</body>
+</html>
+```
